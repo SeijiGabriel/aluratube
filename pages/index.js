@@ -1,4 +1,4 @@
-import config from "./config.json";
+import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../components/CSSReset";
 import Menu from "../components/menu";

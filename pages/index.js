@@ -1,8 +1,8 @@
 import config from "./config.json";
 import styled from "styled-components";
-import { CSSReset } from "../pages/components/CSSReset";
-import Menu from "../pages/components/menu";
-import { StyledTimeline } from "../pages/components/timeline";
+import { CSSReset } from "../components/CSSReset";
+import Menu from "../components/menu";
+import { StyledTimeline } from "../components/timeline";
 
 function HomePage() {
     const estilosDaHomePage = {

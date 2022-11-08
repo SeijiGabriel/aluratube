@@ -1,15 +1,17 @@
+import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../components/CSSReset";
-import Menu from "../components/menu";
-import { StyledTimeline } from "../components/timeline";
+import Menu from "../components/Menu";
+import { StyledTimeline } from "../components/Timeline";
+import { StyledFavorites } from "../components/Favorites";
 
 function HomePage() {
     const estilosDaHomePage = {
-        // backgroundColor: "red" 
+
     };
 
-    // console.log(config.playlists);
+    const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
     return (
         <>
@@ -20,16 +22,18 @@ function HomePage() {
                 flex: 1,
                 // backgroundColor: "red",
             }}>
-                <Menu />
+
+                {/* Prop Drilling */}
+                <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
-                <Timeline playlists={config.playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
                     Conteúdo
                 </Timeline>
+                <Favorites favorites={config.favorites} />
             </div>
         </>
     );
 }
-
 export default HomePage
 
 // function Menu() {
@@ -79,35 +83,71 @@ function Header() {
     )
 }
 
-function Timeline(propriedades) {
+function Timeline({searchValue, ...props}) {
     // console.log("Dentro do componente", propriedades.playlists);
-    const playlistNames = Object.keys(propriedades.playlists);
+    const playlistName = Object.keys(props.playlists);
     // Statement
     // Retorno por expressão
     return (
         <StyledTimeline>
-            {playlistNames.map((playlistName) => {
-                const videos = propriedades.playlists[playlistName];
-                console.log(playlistName);
-                console.log(videos);
+            {playlistName.map((playlistName) => {
+                const videos = props.playlists[playlistName];
+                // console.log(playlistName);
+                // console.log(videos);
                 return (
-                    <section>
+                    <section key={playlistName}>
                         <h2>{playlistName}</h2>
                         <div>
-                            {videos.map((video) => {
-                                return (
-                                    <a href={video.url}>
-                                        <img src={video.thumb} />
-                                        <span>
-                                            {video.title}
-                                        </span>
-                                    </a>
-                                )
-                            })}
+                        {videos
+                                .filter((video) => {
+                                    const titleNormalized = video.title.toLowerCase();
+                                    const searchValueNormalized = searchValue.toLowerCase();
+                                    return titleNormalized.includes(searchValueNormalized)
+                                })
+                                .map((video) => {
+                                    return (
+                                        <a key={video.url} href={video.url}>
+                                            <img src={video.thumb} />
+                                            <span>
+                                                {video.title}
+                                            </span>
+                                        </a>
+                                    )
+                                })}
                         </div>
                     </section>
                 )
             })}
         </StyledTimeline>
     )
+}
+
+function Favorites(props) {
+    const favoritesList = Object.keys(props.favorites);
+    //  console.log("Dentro do componente", props.favorites);
+    return (
+        <StyledFavorites>
+            {favoritesList.map((favorite) => {
+                const channels = props.favorites[favorite]
+                return (
+                    <section key={favorite}>
+                        <h2>{favorite}</h2>
+                        <div>
+                            {channels.map((channel) => {
+                                return (
+                                    <a key={channel.url} href={channel.url}>
+                                        <img src={channel.img} />
+                                        <span>
+                                            {channel.user}
+                                        </span>
+                                    </a>
+                                )
+                            })
+                            }
+                        </div>
+                    </section>
+                )
+            })}
+        </StyledFavorites>
+    );
 }

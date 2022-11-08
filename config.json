@@ -2,6 +2,31 @@
     "name": "Gabriel Kanda",
     "description": "Estudante Alura",
     "github": "SeijiGabriel",
+    
+    "favorites": {
+      "Canais Recomendados": [
+          {
+              "user": "Mario Souto - Dev Soutinho",
+              "img": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s88-c-k-c0x00ffffff-no-rj",
+              "url": "https://www.youtube.com/c/DevSoutinho"
+          },
+          {
+              "user": "Jovem Nerd",
+              "img": "https://yt3.ggpht.com/ytc/AMLnZu9pDOp93R9V0cp_CodoiMk8FM60-46FkdDasQ1i=s176-c-k-c0x00ffffff-no-rj",
+              "url": "https://www.youtube.com/c/JovemNerd"
+          },
+          {
+              "user": "Alura Cursos Online",
+              "img": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
+              "url": "https://www.youtube.com/c/Alura"
+          },
+          {
+              "user": "@peas",
+              "img": "https://avatars.githubusercontent.com/u/71636?v=4",
+              "url": "https://github.com/peas"
+          }
+      ]
+  },
     "playlists": {
       "jogos": [
           {
@@ -170,3 +195,4 @@
       ]
     }
   }
+  

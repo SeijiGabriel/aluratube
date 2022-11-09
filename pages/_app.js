@@ -34,7 +34,7 @@ function ProviderWrapper(props) {
 // Todas as páginas passarão por essa função
 function MyApp({ Component, pageProps }) {
     const contexto = React.useContext(ColorModeContext);
-    console.log(contexto.mode);
+    // console.log(contexto.mode);
 
     return (
             <ThemeProvider theme={theme[contexto.mode]}>

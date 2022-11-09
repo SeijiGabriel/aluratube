@@ -71,7 +71,9 @@ function Header() {
         <StyledHeader>
             <img src={'https://i.imgur.com/bKfgHMU.png'} alt="imagem do banner" id="foto-banner" />
             <section className="user-info">
-                <img src={`https://github.com/${config.github}.png`} alt="foto perfil" id="foto-profile" />
+                <a href="https://www.linkedin.com/in/gabriel-seiji-sim%C3%B5es-kanda-3191205b/">
+                    <img src={`https://github.com/${config.github}.png`} alt="foto perfil" id="foto-profile" />
+                </a>
                 <div>
                     <h2>
                         {config.name}

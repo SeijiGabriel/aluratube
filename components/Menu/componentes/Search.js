@@ -7,7 +7,7 @@ const StyledSearch = styled.div`
   border: 1px solid ${({ theme }) => theme.borderBase};
   max-width: 425px;
   width: 100%;
-  border-radius: 2px;
+  border-radius: 20px;
   overflow: hidden;
   
   input {
@@ -34,14 +34,10 @@ const StyledSearch = styled.div`
   }
 `;
 
-// Home 
-// Menu
-// Search
-// Informação sempre desce
+
 
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
-    // const [valorDaBusca, setValorDaBusca] = React.useState("Teste");
-    // console.log("Search", valorDaBusca)
+    
     const valorDaBusca = valorDoFiltro;
     const setValorDaBusca = setValorDoFiltro;
 

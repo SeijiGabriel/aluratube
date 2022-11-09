@@ -1,7 +1,6 @@
 import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
-import { CSSReset } from "../components/CSSReset";
 import Menu from "../components/Menu";
 import { StyledTimeline } from "../components/Timeline";
 import { StyledFavorites } from "../components/Favorites";
@@ -15,7 +14,7 @@ function HomePage() {
 
     return (
         <>
-            <CSSReset />
+            
             <div style={{
                 display: "flex",
                 flexDirection: "column",
@@ -46,6 +45,9 @@ export default HomePage
 
 
 const StyledHeader = styled.div`
+    
+    background-color: ${({ theme }) => theme.backgroundLevel1};
+
     #foto-profile {
         width: 80px;
         height: 80px;
@@ -84,16 +86,14 @@ function Header() {
 }
 
 function Timeline({searchValue, ...props}) {
-    // console.log("Dentro do componente", propriedades.playlists);
+
     const playlistName = Object.keys(props.playlists);
-    // Statement
-    // Retorno por expressão
+
     return (
         <StyledTimeline>
             {playlistName.map((playlistName) => {
                 const videos = props.playlists[playlistName];
-                // console.log(playlistName);
-                // console.log(videos);
+                
                 return (
                     <section key={playlistName}>
                         <h2>{playlistName}</h2>

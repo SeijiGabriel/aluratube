@@ -4,8 +4,11 @@
 <a href="https://aluratube-eight-gamma.vercel.app/">AluraTube</a>
 
 Tecnologias utilizadas 💻 
+
 ➤ReactJs
+
 ➤NextJs
+
 ➤Styled Components
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/104286173/201234383-5f5891b9-c236-4b96-a38e-ef137999d15c.gif)

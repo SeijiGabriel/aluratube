@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { ColorModeContext } from "./ColorMode";
+import { MoonIcon } from "@primer/octicons-react";
+import { SunIcon } from "@primer/octicons-react";
 
 const StyledSwitch = styled.div`
   background-color: #333333;
@@ -49,8 +51,8 @@ export default function DarkModeSwitch() {
         htmlFor="darkmode"
         className="darkmode-switch"
       >
-        <span>🌙</span>
-        <span>☀️</span>
+        <span><MoonIcon size={16} fill="#FFFFFF" aria-label="dark mode" /></span>
+        <span><SunIcon size={16} fill="#FFFFFF" aria-label="dark mode" /></span>
       </label>
     </StyledSwitch>
   )

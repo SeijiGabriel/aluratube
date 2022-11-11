@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components"
+import { SearchIcon } from "@primer/octicons-react";
 
 const StyledSearch = styled.div`
   display: flex;
@@ -45,7 +46,9 @@ export default function Search({ valorDoFiltro, setValorDoFiltro }) {
         <StyledSearch>
             <input type="text" onChange={(e) => setValorDaBusca(e.target.value)} value={valorDaBusca} />
             <button>
-                🔎
+                <a type="search">
+                <SearchIcon size={24}  />
+                </a>
             </button>
         </StyledSearch>
     )

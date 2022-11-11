@@ -30,6 +30,6 @@ export const StyledFavorites = styled.div`
         font-weight: 700;
         font-size: 14px;
         text-align: center;
-        color: #222222;
+        color: ${({ theme }) => theme.textColorBase || "#222222"};
     }
 `

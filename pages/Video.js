@@ -1,5 +1,5 @@
 import React from "react";
-import { ColorModeContext } from "../components/Menu/componentes/ColorMode";
+import { ColorModeContext } from "../src/components/Menu/componentes/ColorMode";
 
 
 export default function Video() {

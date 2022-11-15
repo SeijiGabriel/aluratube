@@ -1,33 +1,8 @@
 {
     "name": "Gabriel Kanda",
     "job": "Desenvolvedor Front-end",
-    "bg": "https://imgur.com/bKfgHMU",
     "github": "SeijiGabriel",
-    
-    "favorites": {
-      "Canais Recomendados": [
-          {
-              "user": "Mario Souto - Dev Soutinho",
-              "img": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s88-c-k-c0x00ffffff-no-rj",
-              "url": "https://www.youtube.com/c/DevSoutinho"
-          },
-          {
-              "user": "Jovem Nerd",
-              "img": "https://yt3.ggpht.com/ytc/AMLnZu9pDOp93R9V0cp_CodoiMk8FM60-46FkdDasQ1i=s176-c-k-c0x00ffffff-no-rj",
-              "url": "https://www.youtube.com/c/JovemNerd"
-          },
-          {
-              "user": "Alura Cursos Online",
-              "img": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
-              "url": "https://www.youtube.com/c/Alura"
-          },
-          {
-              "user": "@peas",
-              "img": "https://avatars.githubusercontent.com/u/71636?v=4",
-              "url": "https://github.com/peas"
-          }
-      ]
-  },
+   
     "playlists": {
       "jogos": [
           {
@@ -36,7 +11,7 @@
             "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
           },
           {
-            "title": "Frostpunk - Neve e Steak tartare",
+            "title": "Remakes MAIS IMPORTANTES de Pokémon - Retrospectiva Pokémon Fire Red e Leaf Green",
             "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
             "thumb": "https://img.youtube.com/vi/O8jtAyPuhNg/hqdefault.jpg"
           },
@@ -78,7 +53,7 @@
           "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
         },
         {
-          "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+          "title": "LANDING PAGE COM HTML e CSS!",
           "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
           "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
         },
@@ -194,6 +169,35 @@
           "thumb": "https://img.youtube.com/vi/ErvgV4P6Fzc/mqdefault.jpg"
         }
       ]
-    }
+    },
+    "favorites": {
+      "Favoritos": [
+          {
+              "user": "Mario Souto - Dev Soutinho",
+              "img": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s88-c-k-c0x00ffffff-no-rj",
+              "url": "https://www.youtube.com/c/DevSoutinho"
+          },
+          {
+              "user": "Jovem Nerd",
+              "img": "https://yt3.ggpht.com/ytc/AMLnZu9pDOp93R9V0cp_CodoiMk8FM60-46FkdDasQ1i=s176-c-k-c0x00ffffff-no-rj",
+              "url": "https://www.youtube.com/c/JovemNerd"
+          },
+          {
+              "user": "Alura Cursos Online",
+              "img": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
+              "url": "https://www.youtube.com/c/Alura"
+          },
+          {
+              "user": "@peas",
+              "img": "https://avatars.githubusercontent.com/u/71636?v=4",
+              "url": "https://github.com/peas"
+          },
+          {
+            "user": "Kurzgesagt – In a Nutshell",
+            "img": "https://yt3.ggpht.com/ytc/AMLnZu8giocL5QtOHe8hLjl6xNobvGl8ZQS05wVFmybVCg=s176-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/inanutshell"
+          }
+      ]
+  }  
   }
   

@@ -1,8 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { CSSReset } from "../components/CSSReset";
-import ColorModeProvider, { ColorModeContext } from "../components/Menu/componentes/ColorMode";
-import RegisterVideo from "../components/RegisterVideo";
+import { CSSReset } from "../src/components/CSSReset";
+import ColorModeProvider, { ColorModeContext } from "../src/components/Menu/componentes/ColorMode";
+import RegisterVideo from "../src/components/RegisterVideo";
 
 const theme = {
     light: {
@@ -26,7 +26,7 @@ const theme = {
 
 function ProviderWrapper(props) {
     return (
-        <ColorModeProvider initialMode={"dark"}>
+        <ColorModeProvider initialMode={"light"}>
             {props.children}
         </ColorModeProvider>
     )

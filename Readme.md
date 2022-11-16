@@ -5,28 +5,36 @@
 
 Tecnologias utilizadas 💻 
 
-➤ReactJs
+•ReactJs
+•NextJs
+•Styled Components
+## Sistemas desenvolvidos durante a imersão
 
-➤NextJs
-
-➤Styled Components
+- [X] Sistema de categorias
+- [X] Cadastro de novos vídoes
+- [X] Dark mode com provider
+- [X] Barra de busca
+- [X] Integração do armazenamento dos dados com o supabase
+- [X] Cadastro dinâmico de playlists
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/104286173/201234383-5f5891b9-c236-4b96-a38e-ef137999d15c.gif)
 
-### Imersão react Alura.🧑🏻‍💻
+## Requisitos para rodar o projeto:
 
-## Aula 1
+• Possuir o `nodejs` instalado
+• Ter todas as dependências instaladas
 
-Aprender como usar as estruturas de dados do JavaScript para apresentar informações do lado do React!
+Primeiro, clone esse repositório utilizando a seguinte linha no terminal:
+  ```
+  git clone https://github.com/SeijiGabriel/aluratube.git
+  ```
+Ainda no termina execute:
+  ```
+  npm install next react react-dom styled-components @supabase/supabase-js
+  ```
+  ```
+  npm i
+  ```
+Por fim `npm run dev` para iniciar o [servidor local](http://localhost:3000)
 
-## Aula 2
 
-Conceito de state, rerender, derived state e muito mais que é a base do ReactJS!
-
-## Aula 3
-
-Implementando a feature light e dark mode utilizando a ContextAPI do React, usando o Styled Components !
-
-## Aula 4
-
-Formulário que possui múltiplos campos, criando o próprio Hook. 🪝

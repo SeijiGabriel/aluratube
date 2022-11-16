@@ -55,15 +55,6 @@ function HomePage() {
 }
 export default HomePage;
 
-// function Menu() {
-//     return (
-//         <div>
-//             Menu
-//         </div>
-//     )
-// }
-
-
 const StyledHeader = styled.div`
     
     background-color: ${({ theme }) => theme.backgroundLevel1};

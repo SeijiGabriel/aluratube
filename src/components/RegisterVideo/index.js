@@ -67,7 +67,7 @@ export default function RegisterVideo() {
                         formCadastro.clearForm();
                     }}>
                         <div>
-                            <button type="button" className="close-modal" onClick={() => setFormVisivel(false)}>
+                            <button  type="button" className="close-modal" onClick={() => setFormVisivel(false)}>
                                 X
                             </button>
                             <input
@@ -88,7 +88,7 @@ export default function RegisterVideo() {
                                 value={formCadastro.values.playlist}
                                 onChange={formCadastro.handleChange}
                             />
-                            <button type="submit">
+                            <button type="submit" onClick = {() => window.location.reload(false)}>
                                 Enviar vídeo
                             </button>
                         </div>
